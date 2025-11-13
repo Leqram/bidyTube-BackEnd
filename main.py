@@ -8,10 +8,6 @@ app = Flask(__name__)
 CORS(app)
 
 
-from flask import Flask, request, jsonify
-import yt_dlp
-
-app = Flask(__name__)
 
 @app.route("/resolutions", methods=["GET"])
 def get_resolutions():
